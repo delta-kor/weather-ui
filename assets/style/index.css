@@ -1,0 +1,70 @@
+:root {
+    --white: #FFFFFF;
+    --base: #F4F5FB;
+    --black: #595959;
+}
+
+* {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: var(--base);
+}
+
+.nmm {
+    border-radius: 8px;
+    background: var(--base);
+    box-shadow: 2px 2px 4px rgba(162, 170, 221, 0.5), -2px -2px 4px var(--white);
+}
+
+.nav {
+    display: flex;
+    margin: 0;
+    padding: 20px;
+    height: 83px;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav > .hamburger {
+    width: 42px;
+    height: 42px;
+    padding: 15px;
+}
+
+.nav > .hamburger span {
+    display: block;
+    width: 13px;
+    height: 2px;
+    background-color: var(--black);
+    border-radius: 1px;
+    margin: 0 0 3px 0;
+}
+
+.nav > .header {
+    margin: 0;
+    color: var(--black);
+    font-size: 14pt;
+}
+
+.nav > .options {
+    width: 42px;
+    height: 42px;
+    padding: 14px 20px;
+}
+
+.nav > .options span {
+    display: block;
+    width: 3px;
+    height: 3px;
+    background-color: var(--black);
+    border-radius: 2px;
+    margin: 0 0 2px 0;
+}
