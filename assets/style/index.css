@@ -24,9 +24,12 @@ body {
 }
 
 .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
-    margin: 0;
     padding: 20px;
+    width: 100%;
     height: 83px;
     flex-wrap: nowrap;
     align-items: center;
@@ -67,4 +70,23 @@ body {
     background-color: var(--black);
     border-radius: 2px;
     margin: 0 0 2px 0;
+}
+
+.content {
+    margin: 83px 0 0 0;
+    padding: 31px 20px;
+    text-align: center;
+}
+
+.content > .landing > .temperature {
+    margin: 8px 0 0 0;
+    font-size: 64px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.content > .landing > .weather {
+    margin: 4px 0 0 0;
+    font-size: 24px;
+    color: var(--black);
 }
