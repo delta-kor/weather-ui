@@ -152,7 +152,7 @@ body {
 .week-forecast > .item-list {
     padding: 4px 4px 4px 0;
     margin: 0 0 0 -33px;
-    width: calc( 100% + 33px );
+    width: calc( 100% + 53px );
 }
 
 .week-forecast > .item-list > .item {
@@ -165,6 +165,10 @@ body {
 
 .week-forecast > .item-list > .item:first-child {
     margin: 0 0 0 33px;
+}
+
+.week-forecast > .item-list > .item:last-child {
+    margin: 0 16px 0 13px;
 }
 
 .week-forecast > .item-list > .item > .day {
