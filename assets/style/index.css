@@ -151,20 +151,16 @@ body {
 
 .week-forecast > .item-list {
     padding: 4px 20px 4px 0;
-    margin: 0 0 0 -4px;
-    width: calc( 100% + 24px );
+    margin: 0 0 0 -13px;
+    width: 100vw;
 }
 
 .week-forecast > .item-list > .item {
     position: relative;
     display: inline-block;
-    margin: 0 13px 0 0;
+    margin: 0 0 0 13px;
     width: 100px;
     height: 100px;
-}
-
-.week-forecast > .item-list > .item:first-child {
-    margin: 0 13px 0 4px;
 }
 
 .week-forecast > .item-list > .item:last-child {
@@ -206,4 +202,53 @@ body {
     margin: 0;
     width: 23px;
     height: 23px;
+}
+
+.air-quality {
+    position: relative;
+    display: grid;
+    margin: 51px 0 0 0;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+}
+
+.air-quality > .header {
+    position: absolute;
+    margin: 0;
+    top: -8px;
+    transform: translateY(-100%);
+    text-align: left;
+    font-size: 12pt;
+    color: var(--gray);
+}
+
+.air-quality > .item {
+    position: relative;
+    height: 61px;
+}
+
+.air-quality > .item > .header {
+    position: absolute;
+    top: 11px;
+    left: 25px;
+    margin: 0;
+    font-size: 9pt;
+    color: var(--gray);
+}
+
+.air-quality > .item > .status {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    margin: 0;
+    font-size: 12pt;
+    color: var(--black);
+}
+
+.air-quality > .item > .icon {
+    position: absolute;
+    top: 21px;
+    right: 18px;
+    width: 20px;
+    height: 20px;
 }
