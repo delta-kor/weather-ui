@@ -3,6 +3,7 @@
     --base: #F4F5FB;
     --black: #595959;
     --gray: #7C7C7C;
+    --transition: 200ms ease-in-out;
 }
 
 ::-webkit-scrollbar {
@@ -46,6 +47,11 @@ body {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
+    transition: var(--transition);
+}
+
+.nav.float {
+    box-shadow: 2px 2px 4px rgba(162, 170, 221, 0.5), -2px -2px 4px var(--white);
 }
 
 .nav > .hamburger {
