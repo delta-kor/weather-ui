@@ -38,6 +38,7 @@ body {
     padding: 20px;
     width: 100%;
     height: 83px;
+    background-color: var(--base);
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
