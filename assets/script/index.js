@@ -1,4 +1,4 @@
-document.addEventListener('scroll', ev => {
+document.addEventListener('scroll', () => {
     const scrollHeight = window.pageYOffset;
     const nav = document.getElementById('nav');
     if(scrollHeight > 0)
