@@ -5,6 +5,10 @@
     --gray: #7C7C7C;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 * {
     outline: none;
     -webkit-tap-highlight-color: transparent;
