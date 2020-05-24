@@ -284,3 +284,27 @@ body {
     }
 
 }
+
+@media screen and (min-width: 550px) {
+
+    .time-forecast > .item-list {
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
+
+@media screen and (min-width: 860px) {
+
+    .week-forecast > .item-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .week-forecast > .item-list > .item {
+        min-width: 100px;
+        max-width: 140px;
+        flex-grow: 1;
+    }
+
+}
