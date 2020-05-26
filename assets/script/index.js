@@ -6,3 +6,9 @@ document.addEventListener('scroll', () => {
     else
         nav.classList.remove('float');
 });
+
+document.getElementById('hamburger')
+    .addEventListener('click', () => {
+        document.body.classList.toggle('menu-active');
+    })
+;

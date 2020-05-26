@@ -4,6 +4,7 @@
     --black: #595959;
     --gray: #7C7C7C;
     --transition: 200ms ease-in-out;
+    --transition-fast: 100ms ease-in-out;
 }
 
 ::-webkit-scrollbar {
@@ -17,6 +18,7 @@
 }
 
 body {
+    position: relative;
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans KR', sans-serif;
@@ -59,6 +61,7 @@ body {
     width: 42px;
     height: 42px;
     padding: 15px;
+    transition: var(--transition);
 }
 
 .nav > .hamburger span {
@@ -71,12 +74,12 @@ body {
 }
 
 .nav > .header {
-    margin: 0 20px;
     color: var(--black);
     font-size: 14pt;
     white-space: nowrap;
     overflow-x: hidden;
     text-overflow: ellipsis;
+    transition: var(--transition-fast);
 }
 
 .nav > .options {
@@ -274,6 +277,14 @@ body {
     right: 18px;
     width: 20px;
     height: 20px;
+}
+
+body.menu-active .nav > .hamburger {
+    margin: 0 0 0 calc(100vw - 20px - 42px - 20px - 42px - 20px);
+}
+
+body.menu-active .nav > .header {
+    opacity: 0;
 }
 
 @media screen and (max-width: 375px) {
